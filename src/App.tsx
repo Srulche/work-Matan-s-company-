@@ -1,9 +1,10 @@
-import React from 'react';
-import { Card, CardContent, Grid } from '@mui/material';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
-import AppCard from './components/AppCard/AppCard'; // Import the AppCard component
+import Grid from '@mui/material/Grid2'
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import AppDetails from './components/AppDetails/AppDetails'; // Import the AppDetails component
-
+import AppCard from './components/AppCard/AppCard';
+import "./index.css"
+import AppTabs from './components/AppTabs/AppTabs';
+import { Box } from '@mui/material';
 const apps = [
   {
     id: 0,
@@ -96,33 +97,28 @@ const apps = [
 ];
 
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<AppGrid />} />
-        <Route path="/app/:id" element={<AppDetails />} />
+        {/* <Route path="/app/:id" element={<AppDetails />} /> */}
+        <Route path="/app/:id" element={<AppTabs />} />
       </Routes>
     </Router>
   );
 };
 
-const AppGrid: React.FC = () => {
-  const navigate = useNavigate();
-
-  const handleCardClick = (id: number) => {
-    navigate(`/app/${id}`); // Navigate to the app details page
-  };
-
+const AppGrid = () => {
   return (
     <Grid container spacing={3} sx={{ marginTop: 3}}>
       {apps.map((app) => (
-        <Grid item xs={12} sm={6} md={4} key={app.id}>
-          <Card onClick = {() => handleCardClick(app.id)} sx={{ cursor: 'pointer'}}>
-            <CardContent>
-              <AppCard app={app} onClick={() => handleCardClick(app.id)} />
-            </CardContent>
-          </Card>
+        <Grid key={app.id} item xs={12} sm={6} md={4}>
+          <Box sx={{ height: '100%'}}>
+            <AppCard app={app}  />
+          </Box>
+          
+          
         </Grid>
       ))}
     </Grid>

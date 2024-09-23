@@ -1,36 +1,3 @@
-// import { Box, Slider } from "@mui/material";
-// import React from "react";
-
-// const media = [
-//     'https://dapulse-res.cloudinary.com/image/upload/v1693395963/monday-apps-marketplace/7pace%20Timetracker/App_Icon_Template_1_3.png',
-//     'https://example.com/path-to-image2.jpg',
-
-// ]; 
-
-// const SliderComponent: React.FC = () => {
-//     const settings = {
-//         dots: true, 
-//         infinite: true,
-//         speed: 500,
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//     };
-//     return (
-//         <Box sx={{ width: '100%', height: 'auto', marginBottom: '16px' }}>
-//             <Slider {...settings}>
-//                 {media.map((image, index) => (
-//                     <Box key={index} sx={{ textAlign: 'center'}}>
-//                         <img src = {image} alt= {`App Screenshot ${index+1}`} style={{ maxWidth: '100%' , height: 'auto'}} />
-                        
-//                     </Box>
-//                 ))}
-//             </Slider>
-//         </Box>
-//     )
-
-
-// }
-// export default SliderComponent
 
 
 import { Box, IconButton,  Typography } from "@mui/material";

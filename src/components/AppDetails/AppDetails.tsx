@@ -15,7 +15,7 @@ const getLogoUrl = (appId: number) => {
     return logoUrls[appId] || '/default-logo.png'
 }; 
 
-const AppDetails: React.FC = () => {
+const AppDetails: React.FC = ()  => {
     const { id } = useParams<{ id: string}>(); //GET THE APP ID FROM THE ROUTE
     const appId = parseInt(id || '0', 10) // PARSE THE APP ID TO A NUMBER
 
