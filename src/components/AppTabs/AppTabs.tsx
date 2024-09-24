@@ -103,7 +103,7 @@ import { TabPanelProps } from './interfaces/TabPanelInterface'; // Import the in
 import { useParams } from 'react-router-dom'; // Import for accessing route params
 
 // TabPanel function as before
-function TabPanel(props: TabPanelProps) {
+const  TabPanel = (props: TabPanelProps) =>  {
   const { children, value, index, ...other } = props;
 
   return (
@@ -114,11 +114,12 @@ function TabPanel(props: TabPanelProps) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && (
+      
+      {/* {value === index && (
         <Box sx={{ p: 3 }}>
           <Typography>{children}</Typography>
         </Box>
-      )}
+      )} */}
     </div>
   );
 }
