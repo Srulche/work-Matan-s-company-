@@ -12,7 +12,7 @@ const MainDescription = () => {
       <Typography variant="body1" sx={{ marginBottom: 2 }}>
             7pace Timetracker offers seamless time tracking on items and subitems, with flexible timesheets and calendar views. Gain valuable insights for better planning and robust project reporting for budget management, status updates, billing, and more.
       </Typography>
-      See it in action! <Link href="#" sx={{ fontWeight: 'bold', color: 'primary.main', textDecoration: 'none'}}>
+      See it in action! <Link href="#" sx={{ fontWeight: 'bold', color: 'primary.main'}}>
         Schedule a demo
       </Link>
     </Box>

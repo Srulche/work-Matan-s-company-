@@ -3,7 +3,8 @@ import Grid from '@mui/material/Grid2'
 import MainDescription from "../MainDescription/MainDescription"
 import FeatureList from "../FeatureList/FeatureList"
 import CallToAction from "../CallToAction/CallToAction"
-import SidebarSection from "../SIdebarSection/SidebarSection"
+// import SidebarSection from "../SIdebarSection/SidebarSection"
+import SidebarWrapper from "../SidebarWrapper/SidebarWrapper"
 // import InstallButtonWithIcon from "../InstallButtonWithIcon/InstallButtonWithIcon"
 
 const MainOverview = () => {
@@ -37,23 +38,7 @@ const MainOverview = () => {
             </Grid>
             {/* Sidebar */}
             <Grid item xs={12} md={4}>
-              <SidebarSection
-                title="Resources"
-                items={['Support', 'Developer website']}
-              />
-              <SidebarSection
-                title="Privacy & Security"
-                items={['Privacy Policy', 'Terms of Service']}
-              />
-              <SidebarSection
-                title="Categories"
-                items={['Editor\'s choice', 'Featured', 'Team management', 'Productivity & efficiency', 'Reporting & analytics']}
-              />
-              <SidebarSection
-                title="Developed by Appfire"
-                items={['Platinum partner', 'Top-performing apps']}
-              />
-              
+              <SidebarWrapper />
             </Grid>
         </Grid>
         

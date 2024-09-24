@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Card, CardContent, Typography } from '@mui/material';
 import TitleBadge from '../TitleBadge/TitleBadge';
 import RatingDownloadInfo from '../RatingDownloadInfo/RatingDownloadInfo';
@@ -28,8 +27,9 @@ const AppCard  = ({ app }: AppCardProps) => {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
+          padding: 2,
           boxShadow: 2,
-          borderRadius: 2,
+          borderRadius: "8px",
           transition: 'transform 0.3s ease, box-shadow 0.3s ease',
           '&:hover': {
             transform: 'scale(1.02)',
@@ -40,6 +40,8 @@ const AppCard  = ({ app }: AppCardProps) => {
         <CardContent
           sx={{
             display: 'flex',
+            // alignItems: 'center',
+            marginBottom: 2,
             flexDirection: 'column',
             justifyContent: 'space-between',
             flexGrow: 1, // Ensures content takes up full available space

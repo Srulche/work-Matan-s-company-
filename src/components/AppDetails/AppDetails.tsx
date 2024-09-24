@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Typography } from '@mui/material';
+import { Box, Button, Divider, Rating, Typography } from '@mui/material';
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import { useParams } from 'react-router-dom';
@@ -164,9 +164,19 @@ const AppDetails = () => {
                   Rating:
                 </strong>
                 <br />
-                <span style={{ color: '#323338' }}>
-                  {app.rating} ({app.reviews} reviews)
-                </span>
+                <Box sx={{ display: 'flex', alignItems: 'center'}}>
+                  <Rating
+                    value={app.rating}
+                    precision={0.5}
+                    readOnly
+                    sx={{ color: '#FFD700', marginRight: 1}}
+                  />
+                   <span style={{ color: '#323338' }}>
+                    {app.rating} ({app.reviews} reviews)
+                  </span>
+
+                </Box>
+               
               </Typography>
             </Box>
           </Box>

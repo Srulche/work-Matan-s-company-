@@ -78,6 +78,7 @@
 
 import React, { useState } from 'react';
 import { Box, Tabs, Tab, Typography } from '@mui/material';
+import { noTextTransform } from "../../utils/styles"
 import AppDetails from '../AppDetails/AppDetails'; // Import the AppDetails component
 import { useParams } from 'react-router-dom'; // Import for accessing route params
 import MainOverview from '../MainOverview/MainOverview';
@@ -96,7 +97,7 @@ const AppTabs = () => {
       <AppDetails />
 
       {/* Tabs for switching between different content */}
-      <Box sx={{ borderBottom: 1, borderColor: 'divider', marginTop: 2 }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider', marginTop: 2,  }}>
         <Tabs value={value} onChange={handleChange} aria-label="app tabs">
           <Tab label="Overview"  />
           <Tab label="Pricing"  />

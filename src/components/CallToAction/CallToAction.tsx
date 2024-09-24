@@ -16,7 +16,7 @@ const CallToAction = () => {
       }}  
 
     >
-      <Typography variant="h4" sx={{ marginRight: 2}}> Start with a free plan now</Typography>
+      <Typography variant="h4" sx={{ marginRight: 2 }}> Start with a free plan now</Typography>
       
         <Button
             variant="contained"
