@@ -1,10 +1,10 @@
 import Grid from '@mui/material/Grid2'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import AppDetails from './components/AppDetails/AppDetails'; // Import the AppDetails component
 import AppCard from './components/AppCard/AppCard';
 import "./index.css"
 import AppTabs from './components/AppTabs/AppTabs';
 import { Box } from '@mui/material';
+// import MainOverview from './components/MainOverview/MainOverview';
 const apps = [
   {
     id: 0,
@@ -104,6 +104,7 @@ const App = () => {
         <Route path="/" element={<AppGrid />} />
         {/* <Route path="/app/:id" element={<AppDetails />} /> */}
         <Route path="/app/:id" element={<AppTabs />} />
+        {/* <Route path='/app-overview/:id' element={<MainOverview />} /> */}
       </Routes>
     </Router>
   );

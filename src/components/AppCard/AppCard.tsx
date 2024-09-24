@@ -16,11 +16,12 @@ const productLogos: { [key: string]: string } = {
   'SuperForm': 'https://dapulse-res.cloudinary.com/image/upload/v1644925745/monday-apps-marketplace/SuperForm/SuperFrom_Icon.jpg',
 };
 
-const AppCard: React.FC<AppCardProps> = ({ app }) => {
+const AppCard  = ({ app }: AppCardProps) => {
   const logoUrl = productLogos[app.title] || '';
 
   return (
     <Link to={`/app/${app.id}`} style={{ textDecoration: 'none' }}>
+    {/* <Link to={`/app-overview/${app.id}`}>  */}
       <Card
         sx={{
           height: '100%', // Ensure card takes full height within the grid

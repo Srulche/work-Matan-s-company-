@@ -1,8 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
-import React from "react";
 import DownloadIcon from '@mui/icons-material/Download'
 
-const InstallButton: React.FC = () => {
+const InstallButton = () => {
     return (
         <Box>
             <Button
