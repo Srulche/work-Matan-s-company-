@@ -3,7 +3,7 @@ import { Box, Link, Typography } from "@mui/material"
 const MainDescription = () => {
   return (
     <Box>
-        <Typography variant="h4" sx={{ fontWeight: 'bold', marginBottom: 2}}>
+        <Typography variant="h4" sx={{ fontWeight: 'bold', fontFamily: '24 px Poppins, Roboto, "Noto Sans Hebrew ', marginBottom: 2}}>
             Effortlessly record, manage, and report on time tracking
         </Typography>
         <Typography variant="body1" sx={{ marginBottom: 2 }}>

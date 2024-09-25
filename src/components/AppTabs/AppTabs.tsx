@@ -78,7 +78,6 @@
 
 import React, { useState } from 'react';
 import { Box, Tabs, Tab, Typography } from '@mui/material';
-import { noTextTransform } from "../../utils/styles"
 import AppDetails from '../AppDetails/AppDetails'; // Import the AppDetails component
 import { useParams } from 'react-router-dom'; // Import for accessing route params
 import MainOverview from '../MainOverview/MainOverview';

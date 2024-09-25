@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import "./index.css"
 import AppTabs from './components/AppTabs/AppTabs';
-import { Box, ThemeProvider } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 import theme from './utils/theme';
 import AppGrid from './components/AppGrid/AppGrid';
 // import MainOverview from './components/MainOverview/MainOverview';
