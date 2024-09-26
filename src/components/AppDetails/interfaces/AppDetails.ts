@@ -7,5 +7,6 @@ export type AppDetails =  {
         rating: number;
         reviews: number;
         downloads: string;
+        showStar: boolean;
 
 }
