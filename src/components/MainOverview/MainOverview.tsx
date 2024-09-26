@@ -13,6 +13,7 @@ import DevelopedByAppfire from "../DevelopedByAppfire/DevelopedByAppfire"
 import ReportApp from "../ReportApp/ReportApp"
 import InformationBlock from "../InformationBlock/InformationBlock"
 import AppUseIconsBar from "../AppUseIconsBar/AppUseIconsBar"
+import PriceSummary from "../PriceSummary/PriceSummary"
 
 
 
@@ -87,7 +88,11 @@ const MainOverview = () => {
 
       {/* Call to Action section */}
       <Box sx={{ marginTop: 4 }}>
+        
         <CallToAction />
+        <br />
+        <hr />
+        <PriceSummary teamSize={1} seats={2} pricePerSeat={0} />
       </Box>
     </Box>
   );

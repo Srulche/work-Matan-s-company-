@@ -3,6 +3,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import { useParams } from 'react-router-dom';
 import CustomCarousel from '../CustomCarousel';
+import AppTabs from '../AppTabs/AppTabs';
 
 const logoUrls: { [key: number]: string } = {
   0: 'https://dapulse-res.cloudinary.com/image/upload/v1693395963/monday-apps-marketplace/7pace%20Timetracker/App_Icon_Template_1_3.png',

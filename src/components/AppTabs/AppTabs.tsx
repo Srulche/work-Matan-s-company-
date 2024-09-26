@@ -96,7 +96,7 @@ const AppTabs = () => {
       <AppDetails />
 
       {/* Tabs for switching between different content */}
-      <Box sx={{ borderBottom: 1, borderColor: 'divider', marginTop: 2,  }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider',  backgroundColor: '#F6F7FB'  }}>
         <Tabs value={value} onChange={handleChange} aria-label="app tabs">
           <Tab label="Overview"  />
           <Tab label="Pricing"  />

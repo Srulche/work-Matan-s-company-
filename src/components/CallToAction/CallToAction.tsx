@@ -4,7 +4,7 @@ import { Box, Button, Typography } from "@mui/material"
 
 const CallToAction = () => {
   return (
-    <Box 
+    <Box  
       sx={{ 
         backgroundColor: '#F6F7FB',
         padding: 2,
@@ -13,9 +13,11 @@ const CallToAction = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
+        
       }}  
 
     >
+     
       <Typography variant="h4" sx={{ marginRight: 2 }}> Start with a free plan now</Typography>
       
         <Button
